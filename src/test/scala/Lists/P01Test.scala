@@ -1,4 +1,4 @@
-package Exercises1
+package Lists
 
 import org.scalatest.FunSuite
 
@@ -15,5 +15,9 @@ class P01Test extends FunSuite {
     assertThrows[NoSuchElementException] {
       P01.last(List())
     }
+  }
+
+  test("P01.testWithStrings") {
+    assert(P01.last(List("a", "b", "dog", "cat")) === "cat")
   }
 }
